@@ -26,6 +26,9 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest --no-interaction --optimize-autoloader
 
+    - name: pwd
+      run: pwd
+      
     - name: Copy .env.example to .env
       run: cp .env.example .env
 
